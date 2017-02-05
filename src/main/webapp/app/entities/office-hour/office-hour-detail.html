@@ -1,0 +1,27 @@
+
+<div>
+    <h2><span data-translate="a2App.officeHour.detail.title">Office Hour</span> {{vm.officeHour.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="a2App.officeHour.startTime">Start Time</span></dt>
+        <dd>
+            <span>{{vm.officeHour.startTime | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="a2App.officeHour.endTime">End Time</span></dt>
+        <dd>
+            <span>{{vm.officeHour.endTime | date:'medium'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="office-hour-detail.edit({id:vm.officeHour.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

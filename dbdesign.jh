@@ -1,0 +1,38 @@
+entity Student {
+	Name String,
+	Id Integer,
+	Email String,
+}
+
+entity Course {
+	Namee String
+    Id Integer
+    Description String
+}
+
+entity Project {
+	Namee String
+    Deadline ZonedDateTime
+    Description String
+}
+
+entity OfficeHour {
+	StartTime ZonedDateTime
+    EndTime ZonedDateTime
+}
+
+entity Instructor {
+	Name String,
+    Age Integer
+	Email String
+}
+
+relationship OneToMany {
+	Instructor{courses} to Course,
+	Course{students} to Student,
+    Course{projects} to Project
+}
+
+relationship OneToOne {
+	Course{officehour} to OfficeHour
+}

@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "startTime",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "endTime",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20170204201220",
+    "entityTableName": "office_hour",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

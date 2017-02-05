@@ -1,0 +1,23 @@
+{
+    "a2App": {
+        "officeHour" : {
+            "home": {
+                "title": "Office Hours",
+                "createLabel": "Create a new Office Hour",
+                "createOrEditLabel": "Create or edit a Office Hour",
+                "search": "Search for Office Hour"
+            },
+            "created": "A new Office Hour is created with identifier {{ param }}",
+            "updated": "A Office Hour is updated with identifier {{ param }}",
+            "deleted": "A Office Hour is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Office Hour {{ id }}?"
+            },
+            "detail": {
+                "title": "Office Hour"
+            },
+            "startTime": "Start Time",
+            "endTime": "End Time"
+        }
+    }
+}

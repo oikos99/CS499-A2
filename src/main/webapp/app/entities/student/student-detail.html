@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="a2App.student.detail.title">Student</span> {{vm.student.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="a2App.student.name">Name</span></dt>
+        <dd>
+            <span>{{vm.student.name}}</span>
+        </dd>
+        <dt><span data-translate="a2App.student.email">Email</span></dt>
+        <dd>
+            <span>{{vm.student.email}}</span>
+        </dd>
+        <dt><span data-translate="a2App.student.course">Course</span></dt>
+        <dd>
+            <a ui-sref="course-detail({id:vm.student.course.id})">{{vm.student.course.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="student-detail.edit({id:vm.student.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

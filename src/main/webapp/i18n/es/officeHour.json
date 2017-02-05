@@ -1,0 +1,23 @@
+{
+    "a2App": {
+        "officeHour" : {
+            "home": {
+                "title": "Office Hours",
+                "createLabel": "Crear nuevo Office Hour",
+                "createOrEditLabel": "Crear o editar Office Hour",
+                "search": "Search for Office Hour"
+            },
+            "created": "Un nuevo Office Hour ha sido creado con el identificador {{ param }}",
+            "updated": "Un Office Hour ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Office Hour ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Office Hour {{ id }}?"
+            },
+            "detail": {
+                "title": "Office Hour"
+            },
+            "startTime": "Start Time",
+            "endTime": "End Time"
+        }
+    }
+}

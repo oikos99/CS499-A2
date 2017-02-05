@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="a2App.course.detail.title">Course</span> {{vm.course.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="a2App.course.namee">Namee</span></dt>
+        <dd>
+            <span>{{vm.course.namee}}</span>
+        </dd>
+        <dt><span data-translate="a2App.course.description">Description</span></dt>
+        <dd>
+            <span>{{vm.course.description}}</span>
+        </dd>
+        <dt><span data-translate="a2App.course.officehour">Officehour</span></dt>
+        <dd>
+            <a ui-sref="office-hour-detail({id:vm.course.officehour.id})">{{vm.course.officehour.id}}</a>
+        </dd>
+        <dt><span data-translate="a2App.course.instructor">Instructor</span></dt>
+        <dd>
+            <a ui-sref="instructor-detail({id:vm.course.instructor.id})">{{vm.course.instructor.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="course-detail.edit({id:vm.course.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
